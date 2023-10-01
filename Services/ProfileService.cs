@@ -1,11 +1,10 @@
 ﻿using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
-using IdentityModel;
 using IdentityServer.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
-using static System.Formats.Asn1.AsnWriter;
+
 
 namespace IdentityServer.Services
 {
@@ -44,6 +43,5 @@ namespace IdentityServer.Services
             var user = await _userManager.GetUserAsync (context.Subject);
             context.IsActive = user != null;    
         }
-   
     }
 }

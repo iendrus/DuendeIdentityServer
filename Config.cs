@@ -20,8 +20,8 @@ public static class Config
     public static IEnumerable<Client> Clients =>
         new List<Client>
         {
-            new Client
-               {
+                new Client
+                {
                    ClientId = "client",
                    ClientName = "Client for Postman user",
                    AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
@@ -30,7 +30,7 @@ public static class Config
                    AlwaysSendClientClaims = true,
                    AlwaysIncludeUserClaimsInIdToken = true,
                    AllowAccessTokensViaBrowser = true,
-               },
+                },
 
                new Client
                {
@@ -42,8 +42,8 @@ public static class Config
                    AlwaysSendClientClaims = true,
                    AlwaysIncludeUserClaimsInIdToken = true,
                    AllowAccessTokensViaBrowser = true,
-                   RedirectUris = { "https://localhost:7063/swagger/oauth2-redirect.html" },
-                   AllowedCorsOrigins = { "https://localhost:7063" }
+                   RedirectUris = { "https://localhost:7191/swagger/oauth2-redirect.html" },
+                   AllowedCorsOrigins = { "https://localhost:7191" }
                }
         };
 }
